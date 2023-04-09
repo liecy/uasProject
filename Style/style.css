@@ -1,5 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Poppins:wght@400;600;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Poppins:wght@400;600;700&display=swap');
+@media screen and (max-width: 320px) {
+    .nav__name {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 576px) {
+    .nav__list {
+      justify-content: center;
+      column-gap: 3rem;
+    }
+  }
+  @media screen and (min-width: 767px) {
+    .nav {
+      height: 4.1rem; 
+    }
+    .nav__img {
+      display: none;
+    }
+    .nav__icon {
+      display: none;
+    }
+    .nav__name {
+      font-size: .938rem;
+    }
+    .nav__link:hover {
+      color: hsl(174, 63%, 40%);
+    }
+  }
+  @media (max-width: 576px) {
+    .form-control {
+      max-width: 80%;
+    }
+  }
+  .navbar-nav .nav-link
+  {
+    font-size: 100px;
+  }
+
+  .bg-custom
+  {
+    background-color: #5d69a5 ;
+  }
 body {
     font-family: 'Noto Serif', serif;
     font-family: 'Poppins', sans-serif;
@@ -23,6 +65,7 @@ section {
     color: #383f63;
     font-family: 'Poppins';
 }
+<<<<<<< HEAD
 
 .card {
     font-size: 80px;
@@ -116,3 +159,5 @@ section {
     justify-content: center;
     align-items: center;
 }
+=======
+>>>>>>> 19900695d774dbb3833bff0b997aa05fe1c67801
