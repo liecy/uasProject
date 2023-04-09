@@ -8,13 +8,111 @@ body {
 .img1 {
     width: 100%;
     height: auto;
-    padding: 10px;
     margin: auto;
     display: block;
+    padding: 15px;
+}
+
+section {
+    align-items: center;
+    justify-content: center;
 }
 
 .custom-footer {
     background-color: #88a3d2;
     color: #383f63;
     font-family: 'Poppins';
+}
+
+.card {
+    font-size: 80px;
+    color: #ffffff;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-img-overlay {
+    font-size: 30px;
+}
+
+.card-title {
+    font-size: 60px;
+    text-align: center;
+}
+
+.card-img2 {
+    width: auto;
+    height: 100px;
+}
+
+.card-font {
+    color: #193f6e;
+    text-align: center;
+}
+
+@media screen and (min-width: 576px) {
+    .col-3 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .col-3 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    /* aturan CSS untuk layar dengan lebar maksimum 576 piksel */
+}
+
+@media screen and (min-width: 1200px) {
+    /* aturan CSS untuk layar dengan lebar maksimum 576 piksel */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.card .card-img-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.card .card-img-overlay .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.card .card-img-overlay .container .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .card-img-overlay .container .row .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
