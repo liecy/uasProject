@@ -1,47 +1,5 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Poppins:wght@400;600;700&display=swap');
-@media screen and (max-width: 320px) {
-    .nav__name {
-      display: none;
-    }
-  }
-  @media screen and (min-width: 576px) {
-    .nav__list {
-      justify-content: center;
-      column-gap: 3rem;
-    }
-  }
-  @media screen and (min-width: 767px) {
-    .nav {
-      height: 4.1rem; 
-    }
-    .nav__img {
-      display: none;
-    }
-    .nav__icon {
-      display: none;
-    }
-    .nav__name {
-      font-size: .938rem;
-    }
-    .nav__link:hover {
-      color: hsl(174, 63%, 40%);
-    }
-  }
-  @media (max-width: 576px) {
-    .form-control {
-      max-width: 80%;
-    }
-  }
-  .navbar-nav .nav-link
-  {
-    font-size: 100px;
-  }
 
-  .bg-custom
-  {
-    background-color: #5d69a5 ;
-  }
 body {
     font-family: 'Noto Serif', serif;
     font-family: 'Poppins', sans-serif;
@@ -65,7 +23,6 @@ section {
     color: #383f63;
     font-family: 'Poppins';
 }
-<<<<<<< HEAD
 
 .card {
     font-size: 80px;
@@ -75,45 +32,111 @@ section {
 .card-img {
     width: 100%;
     height: auto;
+    z-index: 0;
 }
 
 .card-img-overlay {
     font-size: 30px;
 }
 
-.card-title {
-    font-size: 60px;
-    text-align: center;
-}
+/* @media screen and (min-width: 350px) {
+    .searchbar {
+        height: 35px;
+        width: 180px;
+    }
+} */
 
-.card-img2 {
-    width: auto;
-    height: 100px;
-}
+@media screen and (max-width: 768px) {
+    .card-title {
+        font-size: 20px;
+        text-align: center;
+    }
 
-.card-font {
-    color: #193f6e;
-    text-align: center;
-}
+    .container-putih {
+        background-color: #f7f7f7;
+        font-size: 15px;
+        padding: 20px;
+        color: #193f6e;
+        text-align: center;
+    }
 
-@media screen and (min-width: 576px) {
-    .col-3 {
-        display: none;
+    .card-img2 {
+        width: auto;
+        height: 60px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
 
-@media screen and (min-width: 768px) {
-    .col-3 {
-        display: none;
+@media screen and (min-width: 769px) {
+    .card-title {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .container-putih {
+        background-color: #f7f7f7;
+        font-size: 15px;
+        padding: 20px;
+        color: #193f6e;
+        text-align: center;
+    }
+
+    .card-img2 {
+        width: auto;
+        height: 100px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
 
 @media screen and (min-width: 992px) {
-    /* aturan CSS untuk layar dengan lebar maksimum 576 piksel */
+    .card-title {
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .container-putih {
+        background-color: #f7f7f7;
+        font-size: 25px;
+        padding: 20px;
+        color: #193f6e;
+        text-align: center;
+    }
+
+    .card-img2 {
+        width: auto;
+        height: 100px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
-    /* aturan CSS untuk layar dengan lebar maksimum 576 piksel */
+    .card-title {
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .container-putih {
+        background-color: #f7f7f7;
+        font-size: 30px;
+        padding: 20px;
+        color: #193f6e;
+        text-align: center;
+    }
+
+    .card-img2 {
+        width: auto;
+        height: 100px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .searchbar {
+        height: 35px;
+        width: 300px;
+    }
 }
 
 .card {
@@ -126,15 +149,16 @@ section {
 }
 
 .card .card-img-overlay {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
     position: absolute;
     top: 0;
-    bottom: 0;
     left: 0;
     right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .card .card-img-overlay .container {
@@ -159,5 +183,3 @@ section {
     justify-content: center;
     align-items: center;
 }
-=======
->>>>>>> 19900695d774dbb3833bff0b997aa05fe1c67801
